@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="apilogin.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        form {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #555;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: #666;
+            color: #fff;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 100px; /* Ajusta el tamaño según tu necesidad */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1><img style="height:200px; width: 300px" class="logo" src="./logo.jpg" alt="Logo"></h1>
+    <form onsubmit="app.loginUser()">
+        <label for="email">Usuario:</label>
+        <input id="email" name="Usuario" type="email" placeholder="example@mail.com"/>
+
+        <label for="password">Contraseña:</label>
+        <input id="password" name="Contraseña" type="password" placeholder="password"/>
+
+        <button type="button" onclick="app.loginUser()">Iniciar sesión</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="apitweets.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+            position: relative; /* Agregado para que los botones sean posicionados relativos a este elemento */
+        }
+
+        .logout-btn {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .logout-btn:hover {
+            background-color: #45a049;
+        }
+
+        .logout-btn:focus {
+            outline: none;
+        }
+
+        .publish-btn {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .publish-btn:hover {
+            background-color: #45a049;
+        }
+
+        .publish-btn:focus {
+            outline: none;
+        }
+
+        input,
+        textarea {
+            width: 300px;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #555;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            background-color: #666;
+            color: #fff;
+        }
+
+        textarea {
+            height: 100px;
+        }
+        
+        .tweet-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #444;
+    margin-bottom: 10px;
+}
+
+.tweet-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tweet-text {
+    flex-grow: 1;
+    color: #ccc;
+}
+
+
+        #tweets {
+            display: grid;
+            place-items: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body onload="app.getTweets()">
+    <button class="logout-btn" onclick="app.logOut()">Cerrar Sesión</button>
+    <div style="display: grid; place-items: center">
+        <input id="user" name="user" type="hidden" value="65432aa1c4f5d053147066dc">
+        <textarea name="message" maxlength="140"></textarea>
+        <button class="publish-btn" onclick="app.createTweet()">Publicar</button>
+    </div>
+    <div id="tweets"></div>
+</body>
+</html>

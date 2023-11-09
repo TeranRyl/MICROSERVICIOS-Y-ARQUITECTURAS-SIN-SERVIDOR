@@ -35,14 +35,17 @@ Paso a paso
 `mvn clean install`
 
 ```
-3. Ejecuta la aplicación en tu servidor local.
+4. Ejecuta la aplicación en tu servidor local.
 ```
 
 `quarkus dev`
 
 ```
-4. Realiza pruebas utilizando el browser, preferiblemente con pestaña en incognito.
+5. Realiza pruebas utilizando el browser, preferiblemente con pestaña en incognito.
 ```
+
+`http:/localhost:8080/`
+
 
 ## Evaluacion
 

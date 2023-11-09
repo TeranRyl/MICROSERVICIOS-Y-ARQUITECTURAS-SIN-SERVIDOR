@@ -35,7 +35,7 @@ Paso a paso
 `quarkus dev`
 
 ```
-4. Realiza pruebas utilizando herramientas como Postman, curl o el browser.
+4. Realiza pruebas utilizando el browser, preferiblemente con pestaña en incognito.
 ```
 
 ## Evaluacion

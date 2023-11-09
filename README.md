@@ -23,17 +23,39 @@ Para ejecutar la aplicación y realizar pruebas, sigue estos pasos:
 
 Se realizan pruebas exhaustivas en la aplicación web para garantizar su funcionamiento adecuado y su interacción con el servicio.
 
+#### Ejecucion local
+
+![image](https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/28c31237-0459-470b-a968-8a24c7aed736)
+
+![image](https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/5277eeac-0eda-48c9-88ec-ac465bf1be7c)
+
+
 ### Pruebas de Seguridad con JWT y Amazon Cognito
 
 Se verifican las funcionalidades de autenticación y autorización implementadas con Amazon Cognito utilizando pruebas de acceso y permisos.
+
+#### Configuracion
+
+![image](https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/dd7f4d3d-6c4a-4636-8a2b-3ef7ee0bae9f)
+
 
 ### Pruebas de Microservicios Independientes
 
 Se llevan a cabo pruebas específicas para cada microservicio después de la separación. Esto incluye pruebas de Usuarios, Hilos y Publicaciones.
 
+#### Configuracion S3
+
+![image](https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/19015957-63c4-4da6-91b6-563f83d088fd)
+
+
 ### Pruebas de Despliegue en AWS
 
 Se realizan pruebas para verificar el correcto despliegue y escalabilidad de los microservicios en AWS.
+
+#### Funcionamiento en la nube
+
+![image](https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/4244670f-d34f-4892-8256-31b7d3e590f7)
+
 
 ### Video de Demostración
 

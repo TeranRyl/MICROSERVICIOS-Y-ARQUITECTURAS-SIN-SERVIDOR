@@ -84,6 +84,14 @@ El monolito inicial se divide en tres microservicios independientes para mejorar
 
 Los microservicios se despliegan en AWS utilizando EC2 o contenedores Docker en AWS, lo que permite realizar pruebas y demostrar la escalabilidad de la arquitectura.
 
+## Construido con
+
+* [Java](https://www.oracle.com/co/java/) - Backend
+* [Maven](https://maven.apache.org/) - Gestion de ciclo de vida, codigo fuente y dependencias
+* [Git/Github](https://git-scm.com/) - Almacenar el codigo fuente
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/) - IDE para desarrollo
+
+
 ## Autores
 
 * **Juan Francisco Teran** - *Trabajo total* - [TeranRyl](https://github.com/TeranRyl)

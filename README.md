@@ -2,20 +2,41 @@
 
 Creación de un sistema de microservicios y arquitecturas sin servidor utilizando Quarkus y AWS. El taller se divide en varias etapas, desde la implementación de un servicio de publicaciones similar a Twitter (como Monolito) hasta su separación en tres microservicios diferentes (Usuarios, Publicaciones, Hilos), independientes incluyendo seguridad utilizando JWT con el servicio Cognito.
 
-## Intruscciones para ejecutar
+## Instrucciones para ejecutar
 
-Para ejecutar la aplicación y realizar pruebas, sigue estos pasos:
+### Requisitos previos
 
-1. Asegúrate de tener Quarkus y MongoDB instalados y configurados en tu entorno.
+Para descargar la aplicacion, ya estando aqui, se necesita un equipo de computo con las siguientes caracteristicas:
 
-2. Clona el repositorio de la aplicación.
+```
+- Java 17 instalado (si cuenta con otra version, probablemente deba hacer la respectiva modificacion en el archivo "pom.xml")
 
-3. Importa el proyecto en tu entorno de desarrollo.
+- Maven instalado
 
-4. Ejecuta la aplicación en tu servidor local.
+- Conexion a internet
 
-5. Realiza pruebas utilizando herramientas como Postman o curl.
+- Explorador web
 
+(RECOMENDACION) Tener todo actualizado
+```
+
+### Instalacion
+
+Paso a paso
+
+```
+1. Clona el repositorio de la aplicación.
+
+2. Importa el proyecto en tu entorno de desarrollo.
+
+3. Ejecuta la aplicación en tu servidor local.
+```
+
+`quarkus dev`
+
+```
+4. Realiza pruebas utilizando herramientas como Postman, curl o el browser.
+```
 
 ## Evaluacion
 
@@ -30,7 +51,7 @@ Se realizan pruebas exhaustivas en la aplicación web para garantizar su funcion
 ![image](https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/5277eeac-0eda-48c9-88ec-ac465bf1be7c)
 
 
-### Pruebas de Seguridad con JWT y Amazon Cognito
+### Pruebas de Seguridad con JWT y AWS Cognito
 
 Se verifican las funcionalidades de autenticación y autorización implementadas con Amazon Cognito utilizando pruebas de acceso y permisos.
 
@@ -121,6 +142,7 @@ Los microservicios se despliegan en AWS utilizando EC2 o contenedores Docker en 
 * [Maven](https://maven.apache.org/) - Gestion de ciclo de vida, codigo fuente y dependencias
 * [Git/Github](https://git-scm.com/) - Almacenar el codigo fuente
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/) - IDE para desarrollo
+* [Quarkus](https://quarkus.io/) - Framework para la aplicacion
 
 
 ## Autores

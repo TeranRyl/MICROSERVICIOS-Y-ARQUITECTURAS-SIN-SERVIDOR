@@ -2,6 +2,20 @@
 
 Creación de un sistema de microservicios y arquitecturas sin servidor utilizando Quarkus y AWS. El taller se divide en varias etapas, desde la implementación de un servicio de publicaciones similar a Twitter (como Monolito) hasta su separación en tres microservicios diferentes (Usuarios, Publicaciones, Hilos), independientes incluyendo seguridad utilizando JWT con el servicio Cognito.
 
+## Intruscciones para ejecutar
+
+Para ejecutar la aplicación y realizar pruebas, sigue estos pasos:
+
+1. Asegúrate de tener Quarkus y MongoDB instalados y configurados en tu entorno.
+
+2. Clona el repositorio de la aplicación.
+
+3. Importa el proyecto en tu entorno de desarrollo.
+
+4. Ejecuta la aplicación en tu servidor local.
+
+5. Realiza pruebas utilizando herramientas como Postman o curl.
+
 
 ## Evaluacion
 
@@ -30,7 +44,28 @@ Para visualizar una demostración del funcionamiento y configuración adecuada d
 
 ### Diseño del API
 
-El taller comienza diseñando un API que permite a los usuarios realizar publicaciones de 140 caracteres y registrarlas en un flujo único de publicaciones, similar a Twitter. El diseño incluye tres entidades clave: Usuario, Hilo (Stream), y Publicaciones (Posts). El API se desarrolla utilizando Quarkus.
+El taller comienza diseñando un API que permite a los usuarios realizar publicaciones de 140 caracteres y registrarlas en un flujo único de publicaciones, similar a Twitter. El diseño incluye tres entidades clave: Usuario, Hilo (Stream), y Publicaciones (Posts). El API se desarrolla utilizando el framework Quarkus y MongoDB como base de datos. El API se compone de los siguientes elementos:
+
+
+
+1. **Controladores**:
+   - `PostController`: Este controlador se encarga de gestionar las operaciones relacionadas con las publicaciones, como la obtención de todas las publicaciones y la creación de nuevas publicaciones.
+
+   - `StreamController`: Aunque está vacío en este momento, podría usarse para implementar funcionalidades relacionadas con transmisiones de datos.
+
+   - `UserController`: Administra las operaciones relacionadas con los usuarios, como el inicio de sesión y la obtención de todos los usuarios.
+
+2. **Entidades**:
+   - `Post`: Representa una publicación en la base de datos MongoDB, con propiedades como ID, mensaje y usuario.
+
+   - `Stream`: Representa un stream de tweets, aunque actualmente no se ha implementado ninguna funcionalidad específica para este componente.
+
+   - `User`: Representa un usuario de la aplicación, con propiedades como ID, nombre, dirección de correo electrónico y contraseña.
+
+3. **Servicios**:
+   - `PostServices`: Proporciona métodos para gestionar las publicaciones, como obtener todas las publicaciones, crear nuevas publicaciones y buscar publicaciones por usuario.
+
+   - `UserServices`: Gestiona las operaciones relacionadas con los usuarios, como obtener todos los usuarios, crear nuevos usuarios y verificar las credenciales de inicio de sesión.
 
 
 ### Aplicacion web y Despliegue
@@ -39,7 +74,7 @@ Una aplicación web en JavaScript se crea para interactuar con el servicio. La a
 
 ### Seguridad con JWT y Amazon Cognito
 
-Se agrega seguridad al servicio utilizando tokens JWT (JSON Web Tokens) con el servicio Amazon Cognito de AWS para la autenticación y autorización de usuarios.
+Se agrega seguridad al servicio utilizando tokens JWT (JSON Web Tokens) con el servicio Amazon Cognito de AWS para la autenticación y autorización de usuarios. La clase `CognitoClient` se utiliza para interactuar con Cognito y proporciona métodos para el registro, confirmación de registro y autenticación de usuarios.
 
 ### Separacion en Microservicios
 

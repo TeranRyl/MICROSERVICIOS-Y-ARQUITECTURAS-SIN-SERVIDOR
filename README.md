@@ -66,6 +66,11 @@ Se realizan pruebas para verificar el correcto despliegue y escalabilidad de los
 Para visualizar una demostración del funcionamiento y configuración adecuada de este taller, puede ver el siguiente video:
 
 
+
+https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/34b78e55-6609-42a4-9ba5-6663d386c92b
+
+
+
 ## Implementacion
 
 ### Diseño del API

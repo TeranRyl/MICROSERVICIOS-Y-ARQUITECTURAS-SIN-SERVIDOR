@@ -47,6 +47,8 @@ Se llevan a cabo pruebas específicas para cada microservicio después de la sep
 
 ![image](https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/19015957-63c4-4da6-91b6-563f83d088fd)
 
+`Tutorial: https://discord.com/channels/1065448305687003206/1134249252386766920/1172236028552155240`
+
 
 ### Pruebas de Despliegue en AWS
 
@@ -55,6 +57,8 @@ Se realizan pruebas para verificar el correcto despliegue y escalabilidad de los
 #### Funcionamiento en la nube
 
 ![image](https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/4244670f-d34f-4892-8256-31b7d3e590f7)
+
+![image](https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/4ab7ab94-1eac-4ec2-9eb5-d9352d06a18e)
 
 
 ### Video de Demostración

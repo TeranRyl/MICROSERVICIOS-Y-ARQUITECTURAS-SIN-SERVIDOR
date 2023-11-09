@@ -29,6 +29,12 @@ Paso a paso
 
 2. Importa el proyecto en tu entorno de desarrollo.
 
+3. Empaquetar y compilar el proyecto.
+```
+
+`mvn clean install`
+
+```
 3. Ejecuta la aplicación en tu servidor local.
 ```
 

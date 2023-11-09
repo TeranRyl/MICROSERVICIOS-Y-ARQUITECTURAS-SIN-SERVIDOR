@@ -20,7 +20,7 @@ Para descargar la aplicacion, ya estando aqui, se necesita un equipo de computo 
 (RECOMENDACION) Tener todo actualizado
 ```
 
-### Instalacion
+### Instalacion local
 
 Paso a paso
 
@@ -45,6 +45,12 @@ Paso a paso
 ```
 
 `http:/localhost:8080/`
+
+### Instalacion AWS
+
+Para ejecutarlo en AWS se debe cambiar los correspondientes `localhost`, por la direccion de la respectica maquina EC2. Recordar que como tenemos los estaticos en S3 podriamos subirlos como esta en este repositorio, sin embargo ya para hacer el funcionamiento en AWS, si se deben modificar los archivos estaticos segun nuestras necesidades.
+
+![image](https://github.com/TeranRyl/MICROSERVICIOS-Y-ARQUITECTURAS-SIN-SERVIDOR/assets/81679109/c5850026-632f-4bbd-8749-870fb5c1ea0e)
 
 
 ## Evaluacion
